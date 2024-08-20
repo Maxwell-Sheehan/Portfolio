@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxwell Sheehan Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/0f23f2f377.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li> 
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars"></i>
+        </nav>
+        <div class="header-text">
+          <p>Computer Science Student</p>
+          <h1>
+            Hi I'm <span>Max</span> <br />
+            from Massachusetts
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-------ABOUT----->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/Untitled (30).png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              <b>Full-time Student | Aspiring Computer Scientist</b> <br></br> I am a dedicated
+              full-time student currently pursuing a Bachelor's degree in
+              Computer Science. In addition to my academic commitments, I work
+              full-time at a pharmacy, demonstrating my ability to manage
+              multiple responsibilities effectively. My passion for technology
+              drives me to seek out new and exciting computer science projects,
+              and I am eager to apply my knowledge and skills in real-world
+              settings. I am actively looking for internships and practical work
+              experiences to enhance my understanding and contribute to
+              innovative projects in the tech industry.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span> Designing Web/App interfaces</li>
+                <li>
+                  <span>Web Development</span> Designing Web/App interfaces
+                </li>
+                <li>
+                  <span>App Development</span> Designing Web/App interfaces
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 - Current</span> UI/UX Design Training</li>
+                <li>
+                  <span>2024 - Current</span> Freelance Web Development and Design
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2018 - 2019 </span> Electrical Engineering at Univeristy of Rhode Island</li>
+                <li>
+                  <span>2023 - Current</span> Computer Science BS at Southern New Hampshire Univeristy
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!----------------services ----->
+    <div id = "services">
+      <div class="container"></class>
+        <h1 class="sub-title">My Services:</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>I made this website!</p>
+            <a href="#">learn more</a>
+            </div>
+
+            <div>
+             <i class="fa-brands fa-youtube"></i>
+             <h2>Branded Content</h2>
+             <p>I made a monitized youtube channel generating hunderds of dollars, and sponsorships.</p>
+             <a href="#">learn more</a>
+            </div>
+
+            <div>
+              <i class="fa-solid fa-crop-simple"></i>
+              <h2>Even more coming soon.</h2>
+              <p>I'm constantly working on creative projects so stay tuned!</p>
+              </div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------portfolio-------->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work:</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/logo.png">
+             <div class="layer">
+              <h3>Youtube</h3>
+              <p>Aside from web design I've managed to create a pretty succesful content creator platform.</p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+              
+
+             </div>
+          </div>
+          <div class="work-soon">
+            <img src="images/soon.png">
+            <div class="layer">
+              <h3>Linkedin</h3>
+              <p>While I'm creating more, feel free to find me on linkedin.</p>
+              <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+             </div>
+          </div>
+          <div class="work-soon">
+            <img src="images/soon.png">
+            <div class="layer">
+              <h3>Coming soon.</h3>
+              
+             </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+
+      </div>
+
+    </div>
+
+    <!-----------contact--------->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fa-regular fa-envelope"></i>maxsheehan5@outlook.com</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/maxwell-sheehan-409b3b259/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/Maxwell Sheehan Data Analyst Resume.pdf" download class="btn btn2">Download my resume</a>
+            </div>
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your name" required>
+                <input type="email" name="Email" placeholder="Your email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i>Could be your company, made with <i class="fa-regular fa-heart"></i> by Max</p>
+      </div>
+    </div>
+
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for(tablink of tablinks){
+          tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+
+      function openmenu(){
+        sidemenu.style.right = "0";
+      }
+      function closemenu(){
+        sidemenu.style.right = "-200px";
+      }
+
+    </script>
+    <script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbzs6MFhTwy4dYzCIcdbu3AiH1yIArQV6hyXWsDQIzhvu92OHNnxTyZPj0hBh3HYWc9Z/exec'
+      const form = document.forms['submit-to-google-sheet']
+      const msg = document.getElementById("msg")
+
+      form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+          .then(response => {
+            msg.innerHTML = "Message Sent Successfully"
+            setTimeout(function(){
+              msg.innerHTML = ""
+            },5000)
+            form.reset()
+          })
+          .catch(error => console.error('Error!', error.message))
+  })
+    </script>
+  </body>
+</html>
